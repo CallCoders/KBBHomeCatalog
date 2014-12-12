@@ -58,7 +58,7 @@ public class LeafFrames extends JFrame{
 				Box box1 = Box.createHorizontalBox();
 				JLabel wProema = new JLabel("Ширина, мм: ");
 				wProema.setPreferredSize(sizeOfFields);
-				widthDoorway_InField = new JTextField("2075", 10);
+				widthDoorway_InField = new JTextField(10);
 				box1.add(wProema);
 				box1.add(Box.createHorizontalStrut(6));
 				box1.add(widthDoorway_InField);
@@ -67,7 +67,7 @@ public class LeafFrames extends JFrame{
 				Box box2 = Box.createHorizontalBox();
 				JLabel hProema = new JLabel("Высота, мм: ");
 				hProema.setPreferredSize(sizeOfFields);
-				heigthDoorway_InField = new JTextField("2500", 10);
+				heigthDoorway_InField = new JTextField(10);
 				box2.add(hProema);
 				box2.add(Box.createHorizontalStrut(6));
 				box2.add(heigthDoorway_InField);
@@ -361,7 +361,6 @@ public class LeafFrames extends JFrame{
 			if (widthProema > 2100 || heigthProema > 2500) 
 				{
 				JOptionPane.showMessageDialog(null, "Размеры проема нестандартные!");
-				setResutOutFields(0, 0, 0, 0, 0, "", 0);
 				}
 			else{
 					int wL = widthProema/2+16;
